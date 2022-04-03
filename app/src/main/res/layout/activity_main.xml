@@ -3,17 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:layout_marginHorizontal="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screen.MainActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sOption"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:text="hello"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvItem"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:textStyle="bold"
+        android:gravity="center"/>
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
